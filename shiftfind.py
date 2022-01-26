@@ -1,4 +1,6 @@
 # Base Station Shift Finder
+# usage: python3 shiftfind.py oldbaselat oldbaselon newbaselat newbaselon
+
 import sys
 
 class rcolors:
@@ -6,9 +8,6 @@ class rcolors:
     OKGREEN = '\033[92m'
     WARNING = '\033[93m'
     FAIL = '\033[91m'
-
-
-# usage: conda run shiftfind.py oldbaselat oldbaselon newbaselat newbaselon
 
 if len(sys.argv) != 5:
     sys.exit(rcolors.FAIL + "Usage: python3 shiftfind.py oldbaselat oldbaselon newbaselat newbaselon")
